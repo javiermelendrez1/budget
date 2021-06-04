@@ -6,7 +6,8 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App isLoggedin={false}/> */}
+    <App isLoggedIn={false}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,12 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Greeting from './Greeting.js';
 
-function App() {
-  return (
-    <div>
-      <h1>Budget App</h1>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {isLoggedIn: false};
+  }
+  render(){
+    const isLoggedIn = this.state.isLoggedIn;
+    return(
+      <Greeting isLoggedIn={isLoggedIn}/>
+    );
+  }
 }
-
 export default App;
