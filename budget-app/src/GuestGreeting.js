@@ -13,6 +13,12 @@ class  GuestGreeting extends React.Component {
     render(){
         return(
             <div>
+                <h1>Sign In</h1>
+                <label>Username</label>
+                <input type="text" placeholder="enter username"></input>
+                <label>Password</label>
+                <input type="password" placeholder="enter password"></input>
+                <button>Log In</button>
                 <button onClick={this.handleClick}>Register</button>
                 {this.state.isRegisterVisible ? <Register /> : null}
             </div>
